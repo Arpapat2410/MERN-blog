@@ -1,13 +1,13 @@
 const mongoose = require("mongoose")
-const {Schema,odel} = mongoose;
+const {Schema,model } = mongoose;
 const PostSchema = new Schema({
     title: String,
     summary: String,
     content: String,
-    conver: String,
+    cover: String,
     author: {
         type: Schema.Types.ObjectId,
-        ref: "user"
+        ref: "User"
     },
 }, {
     timestamps: true,
